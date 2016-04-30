@@ -1,0 +1,20 @@
+<div class="module-subheader">
+	<div class="navigation-container">
+		<a href="/#/"><span class="back-home">&lt; Home</span></a>
+	</div>
+	<div class="module-subheader-title">Product List</div>
+	
+	<div class="add-new-item">
+		<a href="/#/product/add/"><span class="add-category-link">(+)Add New Product</span></a>
+	</div>
+</div>
+
+<div class="category-list-container">
+	<div class="category-item" ng-repeat="product in products">
+		<div>
+			<a href="/#/product/view/{{product._id}}">
+				<span class="category-name">{{product.productname}} - {{product.categoryname}}</span>
+			</a> 
+		</div>
+	</div>
+</div>

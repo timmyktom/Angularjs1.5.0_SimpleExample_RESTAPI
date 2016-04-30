@@ -1,0 +1,26 @@
+<div class="module-subheader">
+	<div class="navigation-container">
+		<a ng-click="back()"><span class="back-home">&lt; Back</span></a>
+	</div>
+	<div class="module-subheader-title">Enter Product</div>
+</div>
+<div class="container">
+	<form name="productForm" ng-submit="save()" class="form-horizontal">
+
+		<div class="form-group">
+			<label for="txtproduct">Product Name:</label>
+			<input ng-model="product.productname" class="form-control" id="txtproduct">
+		</div>
+		<div class="form-group">
+			<label for="description">Choose Category:</label>
+			<select name="drpcategory" id="drpcategory" ng-model="product.categoryid" class="form-control">
+				<option value="">---Please select category---</option>
+			  	<option ng-repeat="category in categories" value="{{category._id}}">{{category.categoryname}}</option>
+			</select>
+		</div>
+		<div class="form-actions">
+			<button class="btn btn-primary">Save</button>
+		</div>
+
+	</form>
+</div>

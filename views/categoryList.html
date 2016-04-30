@@ -1,0 +1,20 @@
+<div class="module-subheader">
+	<div class="navigation-container">
+		<a href="/#/"><span class="back-home">&lt; Home</span></a>
+	</div>
+	<div class="module-subheader-title">Category List</div>
+	
+	<div class="add-new-item">
+		<a href="/#/category/add/"><span class="add-category-link">(+)Add New Category</span></a>
+	</div>
+</div>
+
+<div class="category-list-container">
+	<div class="category-item" ng-repeat="category in categories">
+		<div>
+			<a href="/#/category/view/{{category._id}}"><span class="category-name">{{category.categoryname}}</span></a> 
+			<!--<span class="glyphicon glyphicon-pencil" ng-click="edit(category._id)"></span>
+			<span class="glyphicon glyphicon-remove" ng-click="remove(category._id)"></span>-->
+		</div>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<div class="module-subheader">
+	<div class="navigation-container">
+		<a ng-click="back()"><span class="back-home">&lt; Back</span></a>
+	</div>
+	<div class="module-subheader-title">Enter Category</div>
+</div>
+<div class="container">
+	<form name="categoryForm" ng-submit="save()" class="form-horizontal">
+
+		<div class="form-group">
+			<label for="txtcategory">Category Name:</label>
+			<input ng-model="category.categoryname" class="form-control" id="txtcategory">
+		</div>
+		<div class="form-group">
+			<label for="description">Category Desc:</label>
+			<textarea ng-model="category.description" class="form-control" id="description"></textarea>
+		</div>
+		<div class="form-actions">
+			<button class="btn btn-primary">Save</button>
+		</div>
+
+	</form>
+</div>
