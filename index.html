@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myAngularApp">
+
+<head>
+	<title>My Sample App</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="styles/app.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header-main">
+		<header>
+			<h1>Angular 1</h1>
+		</header>
+	</div>
+	<div loader><span>Loading...</span></div>
+	
+	
+	<div class="container-main">
+		<div ng-view></div>
+	</div>
+	
+	<script src="scripts/vendor/angular.js"></script>
+	<script src="scripts/vendor/angular-route.min.js"></script>
+	<script src="scripts/directives/directives.js"></script>
+	<script src="scripts/services/services.js"></script>
+	<script src="scripts/controllers/homeController.js"></script>
+	<script src="scripts/controllers/categoryController.js"></script>
+	<script src="scripts/controllers/productController.js"></script>
+	<script src="scripts/controllers/routeController.js"></script>
+	
+	
+</body>
+
+</html>
