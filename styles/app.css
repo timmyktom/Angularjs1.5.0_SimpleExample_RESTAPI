@@ -1,0 +1,183 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+	height: 100%;
+}
+
+header{
+	background-color: #232f3e;
+}
+
+header>h1{
+	margin: 0;
+}
+
+.header-main{
+	background-color: #232f3e;
+	width: 100%;
+	height: 10%; 
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+}
+
+div[loader] {
+    width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+	color: red;
+    text-align: center;
+	background-color: rgba(107, 97, 97, 0.6);
+}
+
+div[loader] span{
+	position: relative;
+    top: 50%;
+}
+
+.container-main{
+	height: 90%;
+	width: 100%;
+	border: 2px solid rgb(107, 1, 1);
+	box-sizing: border-box;
+}
+
+div[ng-view] {
+    width: 100%;
+	height: 100%; 
+}
+
+.home-container{
+	width: 100%;
+	height: 100%; 
+}
+
+.home-category-card{
+	background-color: #273B96;
+}
+
+.home-category-card:hover{
+	background-color: #707BAB;;
+}
+
+.home-product-card{
+	background-color: #C15E1A;
+}
+
+.home-product-card:hover{
+	background-color: #9A745A;;
+}
+
+.home-card{
+	width: 50%;
+	height: 100%; 
+	text-align: center;
+	float: left;
+	cursor: pointer;
+}
+.card-item{
+	top: 40%;
+	left:0px;
+	position: relative;
+	font-size: 3em;
+	text-align: center;
+	width: 100%;
+	color: #ffffff;
+    font-weight: bold;
+}
+
+.module-subheader{
+	width: 100%;
+	background-color: #8793A2;
+	height: 5%;
+	position: relative;
+}
+
+.navigation-container{
+	width: 10%;
+	float: left;
+	padding-top: 4px;
+}
+
+.navigation-container>a{
+	text-decoration: none;
+	color: #E0E0EB;
+}
+
+.module-subheader-title{
+    width: 20%;
+    text-align: center;
+    font-size: 1.4em;
+    color: #D6D9DC;
+    margin: 0 auto;
+}
+
+.category-list-container{
+	width: 100%;
+	text-align: center;
+}
+
+.category-item{
+	width: 500px;
+	height: 40px;
+	margin: 0 auto;
+}
+.category-item a{
+	text-decoration: none;
+}
+
+.category-item .category-name{
+	width: 80%;
+	height: 100%;
+	display: inline-block;
+	font-size: 1.2em;
+    line-height: 1.8em;
+	background-color: #E4A444;
+	color: black;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
+
+.category-item .category-name:fist-child{
+	border-top: 1px solid gray;
+}
+
+.category-item .category-name:last-child{
+	border-bottom: 1px solid gray;
+}
+
+.add-new-item{
+	width: 12%;
+    padding-top: 4px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.back-home{
+	cursor: pointer;
+}
+.add-new-item>a{
+	text-decoration: none;
+	color: #E0E0EB;
+}
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+
